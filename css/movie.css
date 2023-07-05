@@ -1,0 +1,76 @@
+.mid{
+	background-image:
+url("pics/background/mid5.jpg");
+	height: 710px;
+	box-shadow: 0 0 20px rgba(81, 203, 238, 1);
+	width: 640px;
+	margin: 0px 0px 0px 140px;
+	float: left;
+}
+.style1 {
+	font-family: "Berlin Sans FB Demi";
+	font-size: 18px;
+	color: yellow;
+}
+.style3 {font-size: 18px
+}
+select[type=a]:focus, select:focus {
+  box-shadow: 0 0 100px rgba(81, 203, 238, 10);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+.style8 {color: rgb(255, 255, 51)}
+input[type=text], textarea {
+  outline: none;
+  box-shadow: 0 0 20px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 5px solid #DDDDDD;
+}
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 100px rgba(81, 203, 238, 10);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+.style9 {color: rgb(255, 255, 51)}
+input[type=submit], button {
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  box-shadow: 0 0 20px rgba(81, 203, 238, 1);
+  margin: 5px 1px 3px 0px;
+  border: 5px solid  #0099FF;
+  background-color:#0099FF;
+  font-size:20px;
+  font-family:Centaur;
+  font-weight:bold;
+  width:200px;
+  text-align:center;
+}
+input[type=submit]:focus, button:focus {
+   box-shadow: 0 0 100px rgba(81, 203, 238, 10);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+  font-size:24px;
+  font-family:Centaur;
+  font-weight:bolder;
+  width:250px;
+  text-align:center;
+  color:#FFFF00;
+}
+.center{
+border:#FFFFFF;
+border:thick;
+width:1400px;
+height:1060px;
+margin: 1px 0px 0px 120px;
+}
+.reserve{
+    border-radius: 5px;
+}
+.reserve:hover{
+    cursor: pointer;
+    background-color: #7bdf1d;
+}
