@@ -1,0 +1,441 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image" sizes="32*32">
+    <link rel="icon" href="favicon.ico" type="image" sizes="32*32">
+    <link rel="stylesheet" href="css/index2.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Movie App</title>
+    
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">MOVIT</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"><a href="REGISTRATION.php">SIGNUP</a></li>
+                    <li class="menu-list-item"><a href="Login.PHP">LOGIN</a></li>
+                    <li class="menu-list-item"><a href="About.php">ABOUT</a></li>
+                    <li class="menu-list-item"><a href="UPDATE.PHP">LIST</a></li>
+                    <li class="menu-list-item"><a href="index.html">WATCH ONLINE</a></li>
+                    <li class="menu-list-item"><a href="HOME.php"><span>HOME</span></a></li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="images/img/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/img/f-1.jpg'); ">
+                <img class="featured-title" src="images/img/f-t-1.png" alt="">
+                <p class="featured-desc">Lawyer-by-day Matt Murdock uses his heightened senses from being blinded as a
+                    young boy to fight crime at night on the streets of Hell’s Kitchen as Daredevil.</p>
+                <button class="featured-button" onclick="open1()"> WATCH</button>
+            </div>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/top gun.jpg" alt="">
+                            <span class="movie-list-item-title">Top Gun</span>
+                            <p class="movie-list-item-desc">After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront 
+                                ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to 
+                                fly it.</p>
+                            <button class="movie-list-item-button" onclick="open2()">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/2.jpg" alt="">
+                            <span class="movie-list-item-title">Joker</span>
+                            <p class="movie-list-item-desc">During the 1980s, a failed stand-up comedian is driven
+                                insane and turns to a life of crime and chaos in Gotham City while becoming an infamous
+                                psychopathic crime figure.</p>
+                            <button class="movie-list-item-button" onclick="open3()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/3.jpg" alt="">
+                            <span class="movie-list-item-title">The Batman</span>
+                            <p class="movie-list-item-desc">A point-of-view driven noir tale with heavy focus on
+                                Batman's detective work. A stand-alone story with no connection to the DCEU.</p>
+                            <button class="movie-list-item-button" onclick="open4()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/4.jpg" alt="">
+                            <span class="movie-list-item-title">Black Adam</span>
+                            <p class="movie-list-item-desc">Nearly 5,000 years after he was bestowed with the almighty
+                                powers of the Egyptian gods—and imprisoned just as quickly—Black Adam is freed from his
+                                earthly tomb, ready to unleash his unique form of justice on the modern world.</p>
+                            <button class="movie-list-item-button" onclick="open5()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/5.jpg" alt="">
+                            <span class="movie-list-item-title">Endgame</span>
+                            <p class="movie-list-item-desc">After the devastating events of Avengers: Infinity War, the universe is in ruins due 
+                                to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order 
+                                to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.</p>
+                            <button class="movie-list-item-button" onclick="open6()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/prey.jpg" alt="">
+                            <span class="movie-list-item-title">Prey</span>
+                            <p class="movie-list-item-desc">Naru (Amber Midthunder) is a fierce warrior, raised and trained by some of the best 
+                                hunters from the Great Plains. As a new danger threatens her tribe, Naru must step up to protect her people.</p>
+                            <button class="movie-list-item-button" onclick="open7()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/jurrasic.jpg" alt="">
+                            <span class="movie-list-item-title">Jurrasic World Dominion</span>
+                            <p class="movie-list-item-desc">The film follows Owen Grady and Claire Dearing as they embark on a rescue mission, 
+                                while Alan Grant and Ellie Sattler rejoin Ian Malcolm to expose a conspiracy by the genomics corporation Biosyn 
+                                (a onetime rival of the defunct InGen).</p>
+                            <button class="movie-list-item-button" onclick="open8()">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/thor.jpg" alt="">
+                            <span class="movie-list-item-title">Thor Love and Thunder</span>
+                            <p class="movie-list-item-desc">Thor enlists the help of Valkyrie, Korg and ex-girlfriend Jane Foster to fight Gorr the 
+                                God Butcher, who intends to make the gods extinct. 
+                                </p>
+                            <button class="movie-list-item-button" onclick="open9()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/bullet.jpg" alt="">
+                            <span class="movie-list-item-title">Bullet Train</span>
+                            <p class="movie-list-item-desc">Five assassins aboard a swiftly-moving bullet train find out that their missions have something 
+                                in common.</p>
+                            <button class="movie-list-item-button" onclick="open10()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/minions.jpg" alt="">
+                            <span class="movie-list-item-title">Minions Rise Of Gru</span>
+                            <p class="movie-list-item-desc">The untold story of one twelve-year-old's dream to become the world's greatest supervillain. 
+                                In the heart of the 1970s, amidst a flurry of feathered hair and flared jeans, Gru (Steve Carell) is growing up in the suburbs. </p>
+                            <button class="movie-list-item-button" onclick="open11()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/ghostbusters.jpg" alt="">
+                            <span class="movie-list-item-title">GhostBusters Afterlife</span>
+                            <p class="movie-list-item-desc">Set 32 years after the events of Ghostbusters II, it follows a single mother 
+                                and her children who move to an Oklahoma farm they inherited from her estranged father Egon Spengler, 
+                                a member of the original Ghostbusters.
+                            </p>
+                            <button class="movie-list-item-button" onclick="open12()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/bad.jpg" alt="">
+                            <span class="movie-list-item-title">Bad Trip</span>
+                            <p class="movie-list-item-desc">The film follows two best friends (Eric André and Lil Rel Howery) who take a road trip from Florida 
+                                to New York City so one of them can declare his love for his high school crush (Michaela Conlin), all the while being chased by 
+                                the other's criminal sister (Tiffany Haddish), whose car they have stolen for the trip.</p>
+                            <button class="movie-list-item-button" onclick="open13()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/luca.jpg" alt="">
+                            <span class="movie-list-item-title">Luca</span>
+                            <p class="movie-list-item-desc">Set on the Italian Riviera, the film centers on Luca Paguro, a young sea monster boy with the ability 
+                                to assume human form while on land, who explores the town of Portorosso with his new best friends, Alberto Scorfano and 
+                                Giulia Marcovaldo, experiencing a life-changing summer adventure.
+                                </p>
+                            <button class="movie-list-item-button" onclick="open14()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/lost.jpg" alt="">
+                            <span class="movie-list-item-title">Lost City</span>
+                            <p class="movie-list-item-desc">A reclusive romance novelist on a book tour with her cover model gets swept up in a 
+                                kidnapping attempt that lands them both in a cutthroat jungle adventure.</p>
+                            <button class="movie-list-item-button" onclick="open15()">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/img/f-2.jpg');">
+                <img class="featured-title" src="images/img/f-t-2.png" alt="">
+                <p class="featured-desc">A missing child sets four families on a frantic hunt for answers as they unearth a mind-bending mystery 
+                    that spans three generations.</p>
+                <button class="featured-button">WATCH</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/noone.jpg" alt="">
+                            <span class="movie-list-item-title">No One Gets Out Alive</span>
+                            <p class="movie-list-item-desc">An immigrant in search of the American dream is forced to take a room in a 
+                                boarding house and soon finds herself in a nightmare from which she can't escape.</p>
+                            <button class="movie-list-item-button" onclick="open16()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/21.jpg" alt="">
+                            <span class="movie-list-item-title">Carter</span>
+                            <p class="movie-list-item-desc">A man wakes up missing his memories. 
+                                Directed by a mysterious voice from a device in his ear, he sets off on a hostage rescue mission rife with danger. </p>
+                            <button class="movie-list-item-button" onclick="open17()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/grey.jpg" alt="">
+                            <span class="movie-list-item-title">The Gray Man</span>
+                            <p class="movie-list-item-desc">When the CIA's most skilled mercenary known as Court Gentry, aka Sierra Six, 
+                                accidentally uncovers dark agency secrets, he becomes a primary target and is hunted around the world by psychopathic former colleague Lloyd Hansen and international assassins.</p>
+                            <button class="movie-list-item-button" onclick="open18()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/enola.jpg" alt="">
+                            <span class="movie-list-item-title">Enola Holmes 2</span>
+                            <p class="movie-list-item-desc">Now a detective-for-hire like her infamous brother, Enola Holmes takes on her first official case to find a missing girl, as the sparks 
+                                of a dangerous conspiracy ignite a mystery that requires the help of friends — and Sherlock himself — to unravel.</p>
+                            <button class="movie-list-item-button" onclick="open19()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/red.jpg" alt="">
+                            <span class="movie-list-item-title">Red Notice</span>
+                            <p class="movie-list-item-desc">An Interpol-issued Red Notice is a global alert to hunt and capture the world's most wanted. 
+                                But when a daring heist brings together the FBI's top profiler and two rival criminals, there's no telling what will happen.</p>
+                            <button class="movie-list-item-button" onclick="open20()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/adam.jpg" alt="">
+                            <span class="movie-list-item-title">The Adam Project</span>
+                            <p class="movie-list-item-desc">After accidentally crash-landing in 2022, time-traveling fighter pilot Adam Reed teams up with his 12-year-old self on a mission to save the future.</p>
+                            <button class="movie-list-item-button" onclick="open21()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/extraction.jpg" alt="">
+                            <span class="movie-list-item-title">Extraction</span>
+                            <p class="movie-list-item-desc">A weary mercenary named Rake is hired to save the son of a businessman</p>
+                            <button class="movie-list-item-button" onclick="open22()">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/halloween.jpg" alt="">
+                            <span class="movie-list-item-title">Halloween Ends</span>
+                            <p class="movie-list-item-desc">The film revolves around Corey Cunningham, a young man who falls in love with 
+                                Laurie Strode's granddaughter while a series of events, including crossing paths with Michael Myers, 
+                                render him a murderous outcast.</p>
+                            <button class="movie-list-item-button" onclick="open23()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/light.jpg" alt="">
+                            <span class="movie-list-item-title">LightYear</span>
+                            <p class="movie-list-item-desc">Legendary Space Ranger Buzz Lightyear embarks on an intergalactic adventure alongside a group of 
+                                ambitious recruits and his robot companion Sox.</p>
+                            <button class="movie-list-item-button" onclick="open24()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/spiderman.jpg" alt="">
+                            <span class="movie-list-item-title">Spider-Man No Way Home</span>
+                            <p class="movie-list-item-desc">When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover
+                                 what it truly means to be Spider-Man.</p>
+                            <button class="movie-list-item-button" onclick="open25()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/dune.jpg" alt="">
+                            <span class="movie-list-item-title">Dune</span>
+                            <p class="movie-list-item-desc">Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, 
+                                must travel to the most dangerous planet in the universe to ensure the future of his family and his people.</p>
+                            <button class="movie-list-item-button" onclick="open27()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/secret.jpg" alt="">
+                            <span class="movie-list-item-title">Secret Headquarters</span>
+                            <p class="movie-list-item-desc">While hanging out after school, Charlie and his friends discover the headquarters of the world's most 
+                                powerful superhero hidden beneath his home. When villains attack, they must team up to defend the headquarters and save the world.
+                            </p>
+                            <button class="movie-list-item-button" onclick="open28()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/moonfall.jpg" alt="">
+                            <span class="movie-list-item-title">MoonFall</span>
+                            <p class="movie-list-item-desc">It follows two former astronauts alongside a conspiracy theorist who discover 
+                                the hidden truth about Earth's moon when it suddenly leaves its orbit. </p>
+                            <button class="movie-list-item-button" onclick="open29()">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="images/img/quiet.jpg" alt="">
+                            <span class="movie-list-item-title">All Quiet On The Western Front</span>
+                            <p class="movie-list-item-desc">All Quiet on the Western Front tells the story of a group of young Germans who enlist in 
+                                World War I after being captivated by slogans of patriotism and honour.</p>
+                            <button class="movie-list-item-button" onclick="open30()">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+function open2(){
+  window.open("https://soap2day.do/movie/watch-top-gun-maverick-free-5448","MOVIE","width=screen.width,height=screen.height")
+}
+function open3(){
+  window.open("https://soap2day.do/movie/watch-joker-free-9766","MOVIE","width=screen.width,height=screen.height")
+}
+function open4(){
+  window.open("https://soap2day.do/movie/watch-the-batman-free-16076","MOVIE","width=screen.width,height=screen.height")
+}
+function open5(){
+  window.open("https://soap2day.do/movie/watch-black-adam-free-82087","MOVIE","width=screen.width,height=screen.height")
+}
+function open6(){
+  window.open("https://soap2day.do/movie/watch-avengers-endgame-free-19722","MOVIE","width=screen.width,height=screen.height")
+}
+function open7(){
+  window.open("https://soap2day.do/movie/watch-prey-free-83047","MOVIE","width=screen.width,height=screen.height")
+}
+function open8(){
+  window.open("https://soap2day.do/movie/watch-jurassic-world-3-free-7096","MOVIE","width=screen.width,height=screen.height")
+}
+function open9(){
+  window.open("https://soap2day.do/movie/watch-thor-love-and-thunder-free-66670","MOVIE","width=screen.width,height=screen.height")
+}
+function open10(){
+  window.open("https://soap2day.do/movie/watch-bullet-train-free-85554","MOVIE","width=screen.width,height=screen.height")
+}
+function open11(){
+  window.open("https://soap2day.do/movie/watch-minions-the-rise-of-gru-free-82060","MOVIE","width=screen.width,height=screen.height")
+}
+function open12(){
+  window.open("https://soap2day.do/movie/watch-ghostbusters-afterlife-free-74170","MOVIE","width=screen.width,height=screen.height")
+}
+function open13(){
+  window.open("https://soap2day.do/movie/watch-bad-trip-free-41618","MOVIE","width=screen.width,height=screen.height")
+}
+function open14(){
+  window.open("https://soap2day.do/movie/watch-luca-free-70342","MOVIE","width=screen.width,height=screen.height")
+}
+function open15(){
+  window.open("https://soap2day.do/movie/watch-the-lost-city-free-76072","MOVIE","width=screen.width,height=screen.height")
+}
+function open16(){
+  window.open("https://soap2day.do/movie/watch-no-one-gets-out-alive-free-72586","MOVIE","width=screen.width,height=screen.height")
+}
+function open17(){
+  window.open("https://soap2day.do/movie/watch-carter-free-85722","MOVIE","width=screen.width,height=screen.height")
+}
+function open18(){
+  window.open("https://soap2day.do/movie/watch-the-gray-man-free-84891","MOVIE","width=screen.width,height=screen.height")
+}
+function open19(){
+  window.open("https://soap2day.do/movie/watch-enola-holmes-2-free-89869","MOVIE","width=screen.width,height=screen.height")
+}
+function open20(){
+  window.open("https://soap2day.do/movie/watch-red-notice-free-74167","MOVIE","width=screen.width,height=screen.height")
+}
+function open21(){
+  window.open("https://soap2day.do/movie/watch-the-adam-project-free-78004","MOVIE","width=screen.width,height=screen.height")
+}
+function open22(){
+  window.open("https://soap2day.do/movie/watch-extraction-free-49185","MOVIE","width=screen.width,height=screen.height")
+}
+function open23(){
+  window.open("https://soap2day.do/movie/watch-halloween-ends-free-89170","MOVIE","width=screen.width,height=screen.height")
+}
+function open24(){
+  window.open("https://soap2day.do/movie/watch-lightyear-free-82063","MOVIE","width=screen.width,height=screen.height")
+}
+function open25(){
+  window.open("https://soap2day.do/movie/watch-spider-man-no-way-home-free-71326","MOVIE","width=screen.width,height=screen.height")
+}
+function open26(){
+  window.open("https://soap2day.do/movie/watch-extraction-free-49185","MOVIE","width=screen.width,height=screen.height")
+}
+function open27(){
+  window.open("https://soap2day.do/movie/watch-dune-free-6752","MOVIE","width=screen.width,height=screen.height")
+}
+function open28(){
+  window.open("https://soap2day.do/movie/watch-secret-headquarters-free-85959","MOVIE","width=screen.width,height=screen.height")
+}
+function open29(){
+  window.open("https://soap2day.do/movie/watch-moonfall-free-76975","MOVIE","width=screen.width,height=screen.height")
+}
+function open30(){
+  window.open("https://soap2day.do/movie/watch-all-quiet-on-the-western-front-free-89647","MOVIE","width=screen.width,height=screen.height")
+}
+        const arrows = document.querySelectorAll(".arrow");
+        const movieLists = document.querySelectorAll(".movie-list");
+
+        arrows.forEach((arrow, i) => {
+            const itemNumber = movieLists[i].querySelectorAll("img").length;
+            let clickCounter = 0;
+            arrow.addEventListener("click", () => {
+                const ratio = Math.floor(window.innerWidth / 270);
+                clickCounter++;
+                if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
+                    movieLists[i].style.transform = `translateX(${movieLists[i].computedStyleMap().get("transform")[0].x.value - 300
+                        }px)`;
+                } else {
+                    movieLists[i].style.transform = "translateX(0)";
+                    clickCounter = 0;
+                }
+            });
+
+            console.log(Math.floor(window.innerWidth / 270));
+        });
+
+
+
+        const ball = document.querySelector(".toggle-ball");
+        const items = document.querySelectorAll(
+            ".container,.movie-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle"
+        );
+
+        ball.addEventListener("click", () => {
+            items.forEach((item) => {
+                item.classList.toggle("active");
+            });
+            ball.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
